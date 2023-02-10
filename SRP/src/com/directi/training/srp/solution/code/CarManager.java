@@ -5,10 +5,10 @@ import java.util.List;
 
 public class CarManager
 {
-    private List<Car> _carsDb;
+    private List<Car> _cars;
 
-    public CarManager(List<Car> _carsDb) {
-        this._carsDb = _carsDb;
+    public CarManager(CarDAO carDao) {
+        this._cars = carDao.getAllCars();
     }
 
     public String getCarsNames()

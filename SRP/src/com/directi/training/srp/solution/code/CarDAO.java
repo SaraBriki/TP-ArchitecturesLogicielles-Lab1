@@ -18,7 +18,7 @@ public class CarDAO
         }
         return null;
     }
-    public _carsDb getAllCars()
+    public List<Car> getAllCars()
     {
         return _carsDb;
     }

@@ -1,5 +1,10 @@
 @startuml solution
-class  Car
-class  CarDAO
-class  CarManager
+class  Car {
+    _id
+    _model
+    _brand
+}
+CarManager ..> CarDAO
+CarManager "1" -> "*" Car : manages
+CarDAO -> Car : fetches
 @enduml

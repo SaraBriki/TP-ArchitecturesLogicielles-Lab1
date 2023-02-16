@@ -1,16 +1,12 @@
-package com.directi.training.srp.exercise;
-
 import java.util.Arrays;
 import java.util.List;
 
-public class CarDAO
-{
+public class CarDAO {
     private List<Car> _carsDb = Arrays
-        .asList(new Car("1", "Golf III", "Volkswagen"), new Car("2", "Multipla", "Fiat"),
-            new Car("3", "Megane", "Renault"));
+            .asList(new Car("1", "Golf III", "Volkswagen"), new Car("2", "Multipla", "Fiat"),
+                    new Car("3", "Megane", "Renault"));
 
-    public Car getCarByID(final String carId)
-    {
+    public Car getCarByID(final String carId) {
         for (Car car : _carsDb) {
             if (car.getId().equals(carId)) {
                 return car;
@@ -18,8 +14,8 @@ public class CarDAO
         }
         return null;
     }
-    public List<Car> getAllCars()
-    {
+
+    public List<Car> getAllCars() {
         return _carsDb;
     }
 }

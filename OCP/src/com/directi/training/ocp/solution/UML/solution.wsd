@@ -1,0 +1,6 @@
+@startuml solution
+abstract Resource 
+TimeSlot --> Resource
+SpaceSlot --> Resource
+ResourceAllocator ..> Resource
+@enduml

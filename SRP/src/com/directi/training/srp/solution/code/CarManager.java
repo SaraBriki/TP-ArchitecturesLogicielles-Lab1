@@ -12,7 +12,7 @@ public class CarManager
     public String getCarsNames()
     {
         StringBuilder sb = new StringBuilder();
-        for (Car car : _carsDb) {
+        for (Car car : _cars) {
             sb.append(car.getBrand());
             sb.append(" ");
             sb.append(car.getModel());
@@ -24,7 +24,7 @@ public class CarManager
     public Car getBestCar()
     {
         Car bestCar = null;
-        for (Car car : _carsDb) {
+        for (Car car : _cars) {
             if (bestCar == null || car.getModel().compareTo(bestCar.getModel()) > 0) {
                 bestCar = car;
             }

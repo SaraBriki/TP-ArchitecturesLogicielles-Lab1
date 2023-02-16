@@ -1,0 +1,15 @@
+@startuml solution
+class Timer
+class Sensor
+class SensingDoor
+class TimedDoor
+interface Door
+interface ITimed
+interface ISensing
+TimedDoor ..|> Door
+TimedDoor ..|> ITimed
+TimedDoor ..> Timer
+SensingDoor ..|> Door
+SensingDoor ..|> ISensing
+SensingDoor ..> Sensor
+@enduml

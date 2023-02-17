@@ -1,0 +1,17 @@
+@startuml solution
+class Timer
+class Sensor
+class SensingDoor
+class TimedDoor
+interface Door
+Door : proximityCallback()
+Door : timeOutCallback()
+Door : lock()
+Door : unlock()
+Door : open()
+Door : close()
+TimedDoor ..|> Door
+TimedDoor ..> Timer
+SensingDoor ..|> Door
+SensingDoor ..> Sensor
+@enduml

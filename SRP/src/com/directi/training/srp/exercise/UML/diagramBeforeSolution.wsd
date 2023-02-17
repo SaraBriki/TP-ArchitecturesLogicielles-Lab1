@@ -1,0 +1,12 @@
+@startuml solution
+class  Car {
+    _id
+    _model
+    _brand
+}
+class CarManager
+CarManager "1" -> "*" Car : manages
+CarManager : + Car getFromDb(carId)
+CarManager : + String getCarsNames()
+CarManager : + Car getBestCar()
+@enduml

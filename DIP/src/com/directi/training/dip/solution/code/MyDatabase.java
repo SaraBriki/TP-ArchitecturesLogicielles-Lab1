@@ -1,4 +1,4 @@
-package com.directi.training.dip.exercise;
+package com.directi.training.dip.solution.code;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,0 +1,9 @@
+@startuml solution
+class EncodingModule
+class EncodingModuleClient
+interface IDatabase
+MyDatabase ..|> IDatabase
+EncodingModule ..> IDatabase
+EncodingModuleClient ..> MyDatabase
+EncodingModuleClient ..> EncodingModule
+@enduml

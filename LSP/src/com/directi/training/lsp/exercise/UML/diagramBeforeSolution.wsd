@@ -1,0 +1,13 @@
+@startuml solution
+class Duck
+class ElectronicDuck
+Duck : quack()
+Duck : swim()
+ElectronicDuck -|> Duck
+ElectronicDuck : quack()
+ElectronicDuck : swim()
+ElectronicDuck : turnOn()
+ElectronicDuck : turnOff()
+Pool ..> Duck
+Pool ..> ElectronicDuck
+@enduml

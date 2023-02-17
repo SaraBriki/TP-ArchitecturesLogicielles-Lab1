@@ -1,0 +1,15 @@
+@startuml solution
+ResourceAllocator : - void markTimeSlotBusy(resourceId)
+ResourceAllocator : - void markSpaceSlotBusy(resourceId)
+ResourceAllocator : - void markTimeSlotFree(resourceId)
+ResourceAllocator : - void markSpaceSlotFree(resourceId)
+ResourceAllocator : - int findFreeTimeSlot()
+ResourceAllocator : - int findFreeSpaceSlot()
+ResourceAllocator : + void free(resourceType, resourceId)
+ResourceAllocator : + int allocate(resourceType)
+ResourceAllocator ..> ResourceType
+enum ResourceType {
+    SPACE_SLOT
+    TIME_SLOT
+}
+@enduml
